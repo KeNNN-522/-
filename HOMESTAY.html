@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>霹雳安顺 · 顺风民宿配套</title>
+
+    <style>
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #e67e22;
+            margin-top: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* ===== 选项按钮 ===== */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .tabs button {
+            padding: 10px 22px;
+            border: none;
+            border-radius: 25px;
+            background: #ddd;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .tabs button.active {
+            background: #e67e22;
+            color: white;
+        }
+
+        /* ===== 配套内容 ===== */
+        .package {
+            display: none;
+        }
+
+        .package.active {
+            display: block;
+        }
+
+        .price {
+            background: #fff6e6;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .price p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: #e8f8f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            background: #1ebe5d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🏠 霹雳安顺 · 顺风民宿</h1>
+
+    <p>
+        欢迎来到 <strong>顺风民宿</strong>，位于霹雳安顺，
+        非常适合朋友、家庭及团体出游，
+        轻松享受安顺的精彩行程。
+    </p>
+
+    <!-- 联系方式 -->
+    <div class="contact">
+        <p><strong>📞 联络电话：</strong>016-507 9505</p>
+        <p><strong>📳 WhatsApp 询问详情：</strong></p>
+        <a href="https://wapp.my/60165079505/询问详情" target="_blank">
+            点击 WhatsApp 直接询问
+        </a>
+    </div>
+
+    <!-- 选项按钮 -->
+    <div class="tabs">
+        <button class="active" onclick="showPackage('two')">2 天 1 夜</button>
+        <button onclick="showPackage('three')">3 天 2 夜</button>
+    </div>
+
+    <!-- ===== 2 天 1 夜 ===== -->
+    <div id="two" class="package active">
+        <h2>📍 安顺两天一夜游配套</h2>
+
+        <div class="price">
+            <p>👨‍👩‍👧 成人：RM 258 / 人</p>
+            <p>🧒 小孩（7–11 岁）：RM 200</p>
+            <p>👶 小小孩（4–6 岁）：RM 120</p>
+        </div>
+
+        <p class="highlight">
+            📌 最少 10 位成人（不够人数可另行商议）
+        </p>
+
+        <p>
+            ✨ 安顺区住宿 <strong>1 晚</strong><br>
+            🍱 午餐 × 2<br>
+            🍽 晚餐 × 1<br>
+            🚤 百鸟归巢船票<br>
+            🎟 门票 & 观光车车票
+        </p>
+
+        <p class="highlight">
+            ❌ 不包括接送服务（🚗 / 🚎）
+        </p>
+
+        <hr>
+
+        <h3>🗓 Day 1 — 安顺</h3>
+        <p>
+            🍱 午餐（包含）
+        </p>
+
+        <details>
+            <summary>🕰 大钟楼百年斜塔（包含门票）</summary>
+            <img src="images/clocktower1.jpg" width="100%" style="margin-top:10px;border-radius:10px;">
+            <img src="images/clocktower2.jpg" width="100%" style="margin-top:10px;border-radius:10px;">
+        </details>
+
+        <details>
+            <summary>🎨 安顺壁画街道</summary>
+            <img src="images/mural1.jpg" width="100%" style="margin-top:10px;border-radius:10px;">
+            <img src="images/mural2.jpg" width="100%" style="margin-top:10px;border-radius:10px;">
+        </details>
+
+        <details>
+            <summary>🍰 古董娘惹茶果店</summary>
+            <img src="images/nyonya1.jpg" width="100%" style="margin-top:10px;border-radius:10px;">
+        </details>
+
+        <p>
+            🏠 Check in 民宿<br>
+            🚤 坐船游览百鸟归巢观看夕阳晚霞（包含船票）<br>
+            🍽 晚餐（包含）<br>
+            🌃 拍摄夜景（大钟楼）
+        </p>
+        <p><strong>🍽 第一天 · 午餐</strong><br>
+            1️⃣ 瓦煲红烧石斑头<br>
+            2️⃣ 金瓜奶香豆腐<br>
+            3️⃣ 药材绍酒盐蒸鸡<br>
+            4️⃣ 西式奶油鲜明虾<br>
+            5️⃣ 上汤啦啦煲<br>
+            6️⃣ 蒜茸清炒时菜<br>
+            7️⃣ 猪油渣捞饭
+        </p>
+
+        <p><strong>🍽 第一天 · 晚餐</strong><br>
+            1️⃣ 招牌金瓜鱼头粥<br>
+            2️⃣ 招牌咖喱面包虾<br>
+            3️⃣ 东坡猪手<br>
+            4️⃣ 娘惹苏东<br>
+            5️⃣ 葡汁酥鸡<br>
+            6️⃣ 鱿鱼丝豆腐<br>
+            7️⃣ 罗汉上斋
+        </p>
+
+        <hr>
+
+        <h3>🗓 Day 2</h3>
+        <p>
+            🍳 早餐（自费）<br>
+            🛕 面向霹雳河青龙庙<br>
+            🛍 土产店（50 年老字号香饼、安顺必吃猪肠粉）<br>
+            🐘 花生饼厂（壁画：大象撞火车）<br>
+            ☕ 咖啡厂<br>
+            🍱 午餐（包含）<br>
+            🚜 水闸新村（观光车车票包含）<br>
+            🐸 牛蛙养殖场<br>
+            🍊 桔子园<br>
+            🍈 白香果园<br>
+            ☕ 稻田咖啡馆（赠送一杯饮料 / 咖啡）<br>
+            🏡 回家
+        </p>
+
+        <p><strong>🍽 第二天 · 午餐</strong><br>
+            1️⃣ 咖喱石斑鱼头肉<br>
+            2️⃣ 石锅三杯鸡<br>
+            3️⃣ 娘惹亚三苏东<br>
+            4️⃣ 清炒时菜<br>
+            5️⃣ 沙律海鲜豆腐<br>
+            6️⃣ 咸鱼花腩煲<br>
+            7️⃣ 咸蛋虾菇肉
+        </p>
+
+        <p class="highlight">
+            ✨ 如当日餐馆未营业或其他因素，将更换其他餐馆及菜式
+        </p>
+    </div>
+
+
+    <!-- ===== 3 天 2 夜 ===== -->
+    <div id="three" class="package">
+        <h2>📍 安顺 & 双武隆 · 三天两夜游配套</h2>
+
+        <div class="price">
+            <p>💰 RM 488（每人）</p>
+            <p>👨‍👩‍👧 成人：RM 488</p>
+            <p>🧒 小孩（7–11 岁）：RM 388</p>
+            <p>👶 小小孩（4–6 岁）：RM 268</p>
+        </div>
+
+        <p class="highlight">
+            📌 最少 10 位成人（不够人数另谈）
+        </p>
+
+        <p>
+            🏘 民宿配套<br>
+            ✨ 包含安顺区：住宿 <strong>2 晚</strong>，午餐 ×3，晚餐 ×2，<br>
+            🚤 百鸟归巢船票，🎟 门票及观光车车票
+        </p>
+
+        <p class="highlight">
+            ❌ 不包括接送服务（🚗 / 🚎）
+        </p>
+
+        <hr>
+
+        <h3>🗓 Day 1 — 安顺</h3>
+        <p>
+            🍱 午餐（包含）<br>
+            🕰 大钟楼百年斜塔（包含门票）<br>
+            🎨 安顺壁画街道<br>
+            🍰 古董娘惹茶果店<br>
+            🏠 Check in 民宿<br>
+            🚤 坐船游览百鸟归巢，观看夕阳晚霞（包含船票）<br>
+            🍽 晚餐（包含）<br>
+            🌃 拍摄夜景（大钟楼）
+        </p>
+
+        <hr>
+
+        <h3>🗓 Day 2 — 安顺 ➜ 双武隆（Bagan Datuk）</h3>
+        <p>
+            🍳 早餐（自费）<br>
+            🛕 面向霹雳河青龙庙<br>
+            🛍 土产店（50 年老字号香饼、安顺必吃猪肠粉）<br>
+            🐘 花生饼厂（壁画：大象撞火车）<br>
+            ☕ 咖啡厂<br>
+            🍱 午餐（包含）<br>
+            🚗 午餐后前往 Bagan Datuk（约 35 分钟）<br>
+            🕌 海上清真寺 / 码头打卡<br>
+            🎣 抵达霹雳双武隆渔村<br>
+            🛺 乘坐观光车游览渔乡之村
+        </p>
+
+        <p>
+            🛺 <strong>双武隆渔村观光电瓶车体验（包含门票）</strong><br>
+            电瓶车将带领游客穿梭渔村，深入了解当地渔村文化、<br>
+            风俗民情及周边特色景点，轻松享受渔乡之美。
+        </p>
+
+        <p><strong>行程包括：</strong></p>
+
+        <ul>
+            <li>
+                <details>
+                    <summary>🛺 旅游观光电瓶车绕村服务（包门票）</summary>
+
+                    <p>
+                        想环游双武隆，那么旅游观光电瓶车将是你的理想之选。
+                        悠然坐定，从容观光，导游司机贴心犹如家人，
+                        能让游客在异乡感受家的感觉。
+                    </p>
+
+                    <p>
+                        提供多部电瓶车，接载旅客在渔村里穿梭游览，
+                        目的是为了开拓渔村的旅游事业，
+                        及让游客更加深入了解渔村文化及风俗民情。
+                        你的唯一“任务”就是享受旅行中一路精彩！
+                    </p>
+
+                    <p><strong>✨ 特别推介：</strong></p>
+
+                    <p>
+                        霹雳州双武隆渔村是百年渔村，
+                        当地村民绝大多数都是潮州人，
+                        家家户户房屋外貌仍保留传统风格，
+                        门口常挂堂号，如颖川、宝树、太原等，
+                        通过堂号即可辨认屋主姓氏。
+                    </p>
+                </details>
+            </li>
+
+
+            <li>
+                <details>
+                    <summary>🌻 向日葵主题公园（包门票）</summary>
+
+                    <p><strong>🌼 六大打卡景区：</strong></p>
+
+                    <p>
+                        向日葵花海｜天国の阶梯｜喂鱼乐｜网红秋千｜
+                        水上圆形浮桥｜舢板船爱心浪漫打卡
+                    </p>
+
+                    <p>
+                        “像太阳花般的生命，Smile Like Sunflower！”
+                        蓝天白云下，金黄向日葵与绿叶相映成趣，
+                        犹如一幅诗情画意的田园风景画。
+                    </p>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>🏴‍☠ 海盗船 · 海底世界3D体画 + 🐠 水族馆3D立体画 + 🐾 亲子迷你宠物乐园（包含门票）</summary>
+
+                    <p><strong>主题：杰克 · 海盗船长 🏴‍☠</strong></p>
+
+                    <p>
+                        最具创意的水族馆之一，
+                        杰克海盗船长拥有传奇海盗船「黑珍珠号」，
+                        多年沉入海底的宝藏，等待您来寻找与发掘！
+                    </p>
+
+                    <p>
+                        海洋水族馆 3D 立体画中，
+                        饥饿鲨鱼潜伏在沉船旁等待猎物，
+                        大海龟、海豚宝宝、小丑鱼等栩栩如生，
+                        让人仿佛置身真实海底世界。
+                    </p>
+
+                    <p>
+                        色彩艳丽、视觉震撼，
+                        配合声音与灯光效果，
+                        让游客完全沉浸在海底奇幻体验中。
+                    </p>
+
+                    <p><strong>🐟 Giant Grouper 超级巨大石斑鱼（龙趸）</strong></p>
+
+                    <p>
+                        石斑鱼类中体型最大者，
+                        亦称“斑王”，
+                        是水族馆最受瞩目的明星主角之一。
+                    </p>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>🌅 环岛码头同心桥（夕阳日落海景打卡）</summary>
+
+                    <p>
+                        双武隆环岛码头原为传统渔港，
+                        现已发展为主要观光休闲场所，
+                        常吸引摄影爱好者与婚纱拍摄。
+                    </p>
+
+                    <p>
+                        站在同心桥上眺望大海，
+                        尤其夕阳时分，
+                        渔船映着余晖，画面柔和宁静，
+                        完美呈现朴实渔乡之美。
+                    </p>
+
+                    <p>
+                        可远眺九屿岛与马六甲海峡，
+                        静静感受海风、浪声，
+                        让人流连忘返。
+                    </p>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>🦐 渔夫世家有限公司（本地海鲜 · 优惠回扣）</summary>
+
+                    <p>
+                        由祖辈三代双武隆渔民创立，
+                        专售本地渔船捕获的新鲜海产，
+                        包括鲜鱼、鲜虾、鲜鱿、咸鱼、虾米等。
+                    </p>
+
+                    <p>
+                        保证游客买得开心、吃得安心！
+                    </p>
+                </details>
+            </li>
+
+            <li>
+                🐟 海顺旺鱼丸厂<br>
+            </li>
+
+            <li>
+                🛕 仙法师公古庙<br>
+            </li>
+        </ul>
+
+        <p class="highlight">
+        ⚠ 注意事项：<br>
+        行程须最迟于下午 4:00 前进行，
+        下午 4:30 后电瓶车将停止服务。
+       （最佳时间：早上 8:00 – 下午时段）
+        </p>
+
+         <p>
+            🍽 晚餐（包含）
+            🦐 海鲜拼盘
+            🏠 往回安顺民宿 35 分钟
+        </p>
+
+        <hr>
+
+        <h3>🗓 Day 3 — 双武隆 ➜ 回安顺</h3>
+        <p>
+            🍳 早餐（不包含）<br>
+            🌸 探索旧时代的秘密花园<br>
+            🛕 面向霹雳河青龙庙<br>
+            🥮 驰名老字号加央角<br>
+            🥥 夏威夷罗汉果 / 杂雪<br>
+            🏠 Check out<br>
+            🍱 午餐（包含）<br>
+            🚜 水闸新村（观光车车票包含）<br>
+            🐸 牛蛙养殖场<br>
+            🍊 桔子园<br>
+            🍈 百香果园<br>
+            ☕ 稻田咖啡馆（赠送一杯饮料 / 咖啡）<br>
+            🏡 行程结束
+        </p>
+
+
+        <!-- ===== 菜单部分 ===== -->
+
+        <hr>
+
+        <h3>🍽 第一天 · 午餐</h3>
+        <p>
+        1️⃣ 瓦煲红烧石斑头<br>
+        2️⃣ 金瓜奶香豆腐<br>
+        3️⃣ 药材绍酒盐蒸鸡<br>
+        4️⃣ 西式奶油鲜明虾<br>
+        5️⃣ 上汤啦啦煲<br>
+        6️⃣ 蒜茸清炒时菜<br>
+        7️⃣ 猪油渣捞饭
+        </p>
+
+        <h3>🍽 第一天 · 晚餐</h3>
+        <p>
+        1️⃣ 招牌金瓜鱼头粥<br>
+        2️⃣ 招牌加哩面包虾<br>
+        3️⃣ 东坡猪手<br>
+        4️⃣ 娘惹苏东<br>
+        5️⃣ 葡汁酥鸡<br>
+        6️⃣ 鱿鱼丝豆腐<br>
+        7️⃣ 罗汉上斋
+        </p>
+
+        <hr>
+
+        <h3>🍽 第二天 · 午餐</h3>
+        <p>
+        1️⃣ 咖喱石斑鱼头肉<br>
+        2️⃣ 石锅三杯鸡<br>
+        3️⃣ 娘惹亚三 Sotong<br>
+        4️⃣ 清炒时菜<br>
+        5️⃣ 沙律海鲜豆腐<br>
+        6️⃣ 咸鱼花腩煲<br>
+        7️⃣ 咸蛋虾菇肉
+        </p>
+
+        <h3>🍽 第二天 · 晚餐</h3>
+        <p>
+        1️⃣ 海鲜拼盘
+        </p>
+
+        <hr>
+
+        <h3>🍽 第三天 · 午餐</h3>
+        <p>
+        1️⃣ 娘惹亚三蒸白皂鱼<br>
+        2️⃣ 菜园白斩鸡（半隻）<br>
+        3️⃣ 宫保 Sotong 蝦骨肉<br>
+        4️⃣ 清炒时菜<br>
+        5️⃣ 肉碎豆腐<br>
+        6️⃣ 咸鱼花腩煲
+        </p>
+
+        <p class="highlight">
+        ✨ 如当日餐馆未营业或其他因素，将更换其他餐馆及菜式
+        </p>
+
+    </div>
+
+
+    
+
+    <footer>
+        © 2025 顺风民宿 · 霹雳安顺
+    </footer>
+</div>
+
+<!-- JavaScript -->
+<script>    
+    function showPackage(id) {
+        document.querySelectorAll('.package').forEach(p => {
+            p.classList.remove('active');
+        });
+
+        document.querySelectorAll('.tabs button').forEach(b => {
+            b.classList.remove('active');
+        });
+
+        document.getElementById(id).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
